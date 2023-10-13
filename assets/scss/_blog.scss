@@ -1,0 +1,184 @@
+
+
+
+/*===========================
+         09.BLOG css 
+===========================*/
+
+.blog_area{}
+
+.single_blog{
+    padding: 30px;
+    @include box-shadow (0px 0px 22px 0px rgba($shadow, 0.1));
+    @include transition(.3s);
+    
+    @media #{$lg}{
+        padding: 20px;
+    }
+    @media #{$xs}{
+        padding: 10px;
+    }
+    @media #{$sm}{
+        padding: 20px;
+    }
+
+    &:hover {
+        @include box-shadow (0px 0px 22px 0px rgba($shadow, 0.31));
+    }
+    
+    & .blog_image{
+        & img{
+            width: 100%;
+        }
+    }
+    & .blog_content{
+        padding-top: 25px;
+        
+        & .blog_meta{
+            & ul{
+                & li{
+                    font-size: 16px;
+                    color: $body-color;
+                    display: inline-block;
+                    
+                    & + li{
+                        margin-left: 30px;
+                    }
+                    
+                    & a{
+                        color: $body-color;
+                    }
+                }
+            }
+        }
+        & .blog_title{
+            & a{
+                font-size: 20px;
+                font-weight: 500;
+                color: $heading-color;
+                @include transition(0.3s);
+                margin-top: 15px;
+                
+                @media #{$lg}{
+                    font-size: 18px;
+                }
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        & p{
+            margin-top: 15px;
+        }
+        
+        & .more{
+            margin-top: 15px;
+            color: $theme-color;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    
+    & .blog_content_2{
+        padding-left: 30px;
+        padding-top: 0;
+        
+        @media #{$xs}{
+            padding-left: 0;
+            padding-top: 25px;
+        }
+        @media #{$sm}{
+            padding-left: 30px;
+            padding-top: 0;
+        }
+        
+        & .blog_title{
+            & a{
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+.blog_share{
+    padding-top: 20px;
+    & span{
+        font-size: 24px;
+        font-weight: 500;
+        color: $heading-color;
+        
+        @media #{$lg}{
+            font-size: 20px;
+        }
+        @media #{$xs}{
+            font-size: 18px;
+        }
+    }
+    & .social{
+        
+        & li{
+            display: inline-block;
+            margin-left: 15px;
+            margin-top: 10px;
+            
+            & a{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                font-size: 18px;
+                color: $white;
+                border-radius: 5px;
+                
+                @media #{$lg}{
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 16px;
+                }
+                @media #{$xs}{
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 16px;
+                }
+            }
+            
+            & .social_1{
+                background-color: #4977D9;
+            }
+            & .social_2{
+                background-color: #55ACEE;
+            }
+            & .social_3{
+                background-color: #E4405F;
+            }
+            & .social_4{
+                background-color: #0077B5;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

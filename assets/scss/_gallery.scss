@@ -1,0 +1,47 @@
+
+
+
+/*===========================
+      06.GELLARY css 
+===========================*/
+
+.gallery_area{}
+
+.single_gallery{
+    position: relative;
+    
+    & img{
+        width: 100%;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    & a{
+        width: 73px;
+        height: 73px;
+        line-height: 73px;
+        text-align: center;
+        background-color: $theme-color;
+        color: $white;
+        border-radius: 50%;
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transition(0.3s);
+        @include transform(translate(-50%, -50%) scale(0));
+    }
+    
+    &:hover{
+        & a{
+            @include transform(translate(-50%, -50%) scale(1));
+        }
+    }
+}
+
+
+
+
+
+
+
+

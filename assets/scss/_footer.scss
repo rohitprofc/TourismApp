@@ -1,0 +1,160 @@
+
+
+
+/*===========================
+        11.FOOTER css 
+===========================*/
+
+.footer_area{
+    background-color: $heading-color;
+}
+
+.footer_widget{
+    
+}
+
+.footer_about{
+    & p{
+        color: $white;
+        margin-top: 25px;
+    }
+    & .social{
+        & li{
+            display: inline-block;
+            margin-top: 35px;
+            
+            & + li{
+                margin-left: 15px;
+            }
+            
+            & a{
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                font-size: 18px;
+                color: $white;
+                border-radius: 5px;
+            }
+            
+            & .social_1{
+                background-color: #4977D9;
+            }
+            & .social_2{
+                background-color: #55ACEE;
+            }
+            & .social_3{
+                background-color: #E4405F;
+            }
+            & .social_4{
+                background-color: #0077B5;
+            }
+        }
+    }
+}
+
+.footer_link_wrapper{}
+
+.footer_title{
+    font-size: 24px;
+    font-weight: 500;
+    color: $white;
+    
+    @media #{$xs}{
+        font-size: 20px;
+    }
+}
+
+.footer_link{
+    width: 50%;
+    
+    & .link{
+        padding-top: 30px;
+        
+        & li{
+            margin-top: 15px;
+            
+            & a{
+                font-size: 16px;
+                color: $white;
+                @include transition(0.3s);
+                
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.footer_subscribe{
+    
+    & p{
+        color: $white;
+        margin-top: 45px;
+    }
+    
+    & .subscribe_form{
+        position: relative;
+        margin-top: 30px;
+        
+        & input{
+            width: 100%;
+            height: 60px;
+            border-radius: 5px;
+            padding: 0 25px;
+            border: 0;
+            color: $heading-color;
+        }
+        & button{
+            height: 40px;
+            width: 40px;
+            border: 0;
+            font-size: 28px;
+            color: $white;
+            background-color: $theme-color;
+            border-radius: 5px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+}
+
+
+
+/*===== BACK TO TOP =====*/
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: $theme-color;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        color: $white;
+        background-color: $theme-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+

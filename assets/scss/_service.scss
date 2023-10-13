@@ -1,0 +1,69 @@
+
+
+
+/*===========================
+      05.SERVICE css 
+===========================*/
+
+.services_area{}
+
+.single_service{
+    @include box-shadow (0px 0px 15px 0px rgba($shadow, 0.1));
+    padding: 25px 15px;
+    background-color: $white;
+    @include transition(.3s);
+    
+    & .services_icon{
+        & i{
+            width: 75px;
+            height: 75px;
+            border: 2px solid $theme-color;
+            line-height: 71px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 40px;
+            color: $theme-color;
+            @include transition(0.3s);
+        }
+    }
+    & .services_content{
+        & .title{
+            margin-top: 25px;
+            color: $heading-color;
+            @include transition(0.3s);
+            font-size: 24px;
+            font-weight: 500;
+            
+            @media #{$lg}{
+                font-size: 22px;
+            }
+            @media #{$xs}{
+                font-size: 20px;
+            }
+        }
+        & p{
+            margin-top: 15px;
+        }
+    }
+    
+    &:hover{
+        @include box-shadow (0px 0px 15px 0px rgba($shadow, 0.20));
+        & .services_icon{
+            & i{
+                background: $theme-color;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

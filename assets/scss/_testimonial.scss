@@ -1,0 +1,83 @@
+
+
+
+/*===========================
+     08.TESTIMONIUAL css 
+===========================*/
+
+
+.testimonial_area{
+    
+}
+
+.single_testimonial{
+    padding: 30px;
+    background-color: $white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    @include box-shadow (0px 0px 22px 0px rgba($shadow, 0.31));
+    position: relative;
+    margin: 30px 0;
+    
+    & i{
+        font-size: 60px;
+        line-height: 60px;
+        color: $theme-color;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    & img{
+        border-radius: 5px;
+        display: inline-block;
+    }
+    & .author_name{
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    & .sub_title{
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    & p{
+        margin-top: 20px;
+    }
+}
+
+.testimonial_active{
+    & .slick-dots{
+        width: 100%;
+        text-align: center;
+        
+        & li{
+            display: inline-block;
+            margin: 0 3px;
+            
+            & button{
+                width: 15px;
+                height: 15px;
+                background: none;
+                border: 2px solid $theme-color;
+                border-radius: 50%;
+                font-size: 0;
+                @include transition(0.3s);
+                @include transform(translateX(-50%));
+            }
+            
+            &.slick-active{
+                & button{
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

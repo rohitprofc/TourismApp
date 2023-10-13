@@ -1,0 +1,122 @@
+
+
+
+/*===========================
+        03.ABOUT css 
+===========================*/
+
+
+.about_area{}
+
+.about_wrapper{
+    position: relative;
+}
+
+.about_image{
+    width: 48%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 220px;
+    
+    @media #{$lg}{
+        border-top-right-radius: 170px;
+    }
+    @media #{$md}{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        border-top-right-radius: 170px;
+    }
+    @media #{$xs}{
+        width: 100%;
+        height: 400px;
+        position: relative;
+        border-top-right-radius: 100px;
+    }
+}
+
+.about_content{
+    @media #{$md}{
+        margin-top: 45px;
+    }
+    @media #{$xs}{
+        margin-top: 45px;
+    }
+        
+    & .main-btn{
+        margin-top: 45px;
+        
+        &:hover {
+            @include box-shadow (0px 5px 20px 0px rgba(0, 0, 0, 0.2));
+        }
+    }
+}
+
+
+
+.about_counter{
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-top: 30px;
+}
+
+.single_counter{
+    background-color: $white;
+    @include box-shadow (0px 0px 25px 0px rgba($shadow, 0.25));
+    width: 192px;
+    height: 142px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    @media #{$md}{
+        width: 20.6%;
+    }
+    @media #{$xs}{
+        width: 40%;
+        padding: 10px;
+    }
+    
+    & span{
+        font-size: 34px;
+        font-weight: 700;
+        color: $heading-color;
+        
+        @media #{$md}{
+            font-size: 24px;
+        }
+        @media #{$xs}{
+            font-size: 24px;
+        }
+    }
+    & p{
+        font-size: 18px;
+        font-weight: 500;
+        
+        @media #{$md}{
+            font-size: 16px;
+        }
+        @media #{$xs}{
+            font-size: 14px;
+        }
+    }
+    
+    &.counter_1{
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+    }
+    &.counter_2{
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+
+
+
+
+
+
